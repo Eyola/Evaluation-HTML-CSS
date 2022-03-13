@@ -1,0 +1,270 @@
+/*
+        font-family: 'PT Sans Caption', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Hind Madurai', sans-serif;
+
+        #F1F1F2
+        #BCBABE
+        #A1D6E2
+        #1995AD
+        */
+
+body {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumb a {
+    color: #459eca;
+    font-weight: 700;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header {
+    width: 100%;
+    background-color: #1995AD;
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-head {
+    display: flex;
+    background-color: #A1D6E2;
+    justify-content: space-around;
+    color: white;
+    border: solid 2px #763626;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+aside {
+    height: auto;
+    background-color: #BCBABE;
+    color: white;
+    max-width: 250px;
+    padding: 0.5em;
+}
+
+h2 {
+    padding: 0 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+aside>nav>ul {
+    display: none;
+    padding: 0;
+}
+
+aside>nav>ul>li ul {
+    padding: 0;
+}
+
+aside>nav>ul>li {
+    margin-bottom: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+section a {
+    color: black;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 0 0.5em;
+    box-shadow: 5px -5px 11px rgb(95, 90, 90);
+    text-align: justify;
+}
+
+.progressBar label {
+    color: black;
+    width: 100%;
+    margin: 0;
+    font-size: 1em;
+}
+
+progress {
+    width: 50%;
+}
+
+.progressBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer {
+    background-color: #763626;
+    width: 100%;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+article p {
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.button {
+    width: 25%;
+    border-radius: 5px;
+    background: #90AFC5;
+    border: 1px solid black;
+    color: white;
+    margin: auto 0 0.5em auto;
+    text-decoration: none;
+    text-align: center;
+    padding: inherit;
+}
+
+.container aside span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.breadcrumb {
+    width: 100%;
+    background-color: #F1F1F2;
+}
+
+.breadcrumb ul {
+    margin-top: 0;
+}
+
+section nav {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.pagination_section {
+    color: black;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+}
+
+.pagination li {
+    margin: 0 1px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    text-decoration: none;
+    display: block;
+}
+
+.watermark {
+    text-align: center;
+}
+
+label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#toggle:checked+.mainPages {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#toggle {
+    display: none;
+}
+
+.fa-solid {
+    padding: 1em;
+    margin: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    article {
+        width: 46%;
+    }
+    .unique {
+        width: 100%;
+    }
+    .mainPages {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2em;
+        margin: 1em;
+    }
+    aside li ul {
+        margin: 0.5em 0 2em 0;
+        padding-left: 1.5em;
+    }
+    label {
+        display: none;
+    }
+}
