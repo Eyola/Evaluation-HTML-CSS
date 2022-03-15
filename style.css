@@ -32,7 +32,7 @@ a:hover {
     flex-flow: row wrap;
 }
 
-header {
+.page {
     width: 100%;
     background-color: #1995AD;
     color: white;
@@ -97,7 +97,40 @@ aside>nav>ul>li {
     margin-bottom: 1em;
 }
 
-section {
+.container>p {
+    display: flex;
+}
+
+.harticle {
+    display: inline-flex;
+    justify-content: space-between
+}
+
+.events {
+    background-color: #ffc300a8;
+    border: #BCBABE 1px solid;
+    border-radius: 20px 0;
+    padding: 0.3em;
+    margin-left: -0.5em;
+}
+
+.gallery {
+    background-color: #00ff1aa8;
+    border: #BCBABE 1px solid;
+    border-radius: 20px 0;
+    padding: 0.3em;
+    margin-left: -0.5em;
+}
+
+.news {
+    background-color: #009affa8;
+    border: #BCBABE 1px solid;
+    border-radius: 20px 0;
+    padding: 0.3em;
+    margin-left: -0.5em;
+}
+
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,8 +139,14 @@ section {
     padding-left: 1em;
 }
 
-section a {
+main a {
     color: black;
+}
+
+.timePost {
+    margin-left: auto;
+    font-size: 0.8em;
+    float: right;
 }
 
 article {
@@ -190,13 +229,13 @@ footer nav ul {
     margin-top: 0;
 }
 
-section nav {
+main nav {
     display: flex;
     justify-content: center;
     margin: 1em;
 }
 
-.pagination_section {
+.pagination_Section {
     color: black;
 }
 
